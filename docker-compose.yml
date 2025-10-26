@@ -15,11 +15,11 @@ services:
     environment:
       - RELEASE_ID=${RELEASE_ID_BLUE}
     ports:
-      - "8081:80"
+      - "8081:3000"
 
   app_green:
     image: ${GREEN_IMAGE}
     environment:
       - RELEASE_ID=${RELEASE_ID_GREEN}
     ports:
-      - "8082:80"
+      - "8082:3000"
